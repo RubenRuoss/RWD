@@ -1,0 +1,609 @@
+    /** Header **/
+
+
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: #D72E35;
+        z-index: 100;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 10vh;
+        justify-content: space-around;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .logo img {
+        margin-left: 5%;
+        min-height: 50px;
+        height: 15vh;
+    }
+
+    .burger {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-flow: auto;
+        justify-content: space-between;
+        align-content: center;
+        gap: 3vw;
+    }
+
+    .burger a {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Pinup";
+        font-size: 2vw;
+    }
+
+    .burger a:hover {
+        color: #F8C513;
+    }
+
+    .interaktion {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 2vw;
+    }
+
+    .interaktion img {
+        height: 5vh;
+        display: block;
+    }
+
+    #suche {
+        display: block;
+    }
+
+    #suche:hover {
+        height: 5.5vh;
+    }
+
+    #konto:hover {
+        height: 5.5vh;
+    }
+
+    #sprache:hover {
+        height: 5.5vh;
+    }
+
+    .interaktion img:hover {
+        height: 5.5vh;
+    }
+
+    /** Erste Seite **/
+
+    .parent {
+        display: grid;
+        width: 100vw;
+        height: 90vh;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    /** Text Links */
+
+    .pringlesKlassiker {
+        grid-area: 1 / 1 / 11 / 7;
+        background-color: #009CDE;
+        color: #fff;
+        line-height: 1.1;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .bundel {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .pringlesKlassiker h1 {
+        width: 100%;
+        margin: 0px;
+        font-family: "Pinup";
+        font-size: calc(1em + 2.6vw);
+    }
+
+    .pringlesKlassiker h2 {
+        width: 70%;
+        margin: 0px;
+        font-family: "Pinup";
+        font-size: calc(1em + 1.2vw);
+    }
+
+    .pringlesKlassiker p {
+        width: 70%;
+        margin: 0px;
+        font-family: "Andes";
+        font-size: calc(1em + 0.5vw);
+    }
+
+    #probieren {
+        height: 15%;
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 10%;
+        font-family: "Pinup";
+        font-size: 1.5vw;
+        align-content: center;
+        background-color: #D72E35;
+        border: solid 0.2vw;
+        border-radius: 5px;
+        border-color: #fff;
+    }
+
+    #probieren a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #probieren:hover {
+        background-color: #F8C513;
+        border: solid 0.2vw;
+        border-color: #D72E35;
+    }
+
+    #probieren:hover a {
+        color: #D72E35;
+    }
+
+    /** Packungen Rechts*/
+
+    .rechts {
+        grid-area: 1 / 7 / 12 / 13;
+        background-color: #009CDE;
+        display: flex;
+        position: relative;
+    }
+
+    .packungen {
+        z-index: 52;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 90%;
+        bottom: 0;
+        left: 1vw;
+        position: absolute;
+    }
+
+    .wolke {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        right: 2vw;
+        top: 5%;
+        max-height: 100%;
+
+    }
+
+    /** Yellow Space */
+
+    .yellowSpace {
+        grid-area: 11 / 1 / 13 / 13;
+        background-color: #F8C513;
+        z-index: 1;
+    }
+
+    /** Footer */
+
+    .footer {
+        background-color: #D72E35;
+        z-index: 101;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 70px;
+    }
+
+    .footer a {
+        display: grid;
+        text-decoration: none;
+        font-family: "Pinup";
+        color: #ffff;
+        justify-content: center;
+    }
+
+    .footer a:hover {
+        color: #F8C513;
+    }
+
+    /* zweite Seite*****************************************************/
+
+    .parent2 {
+        display: grid;
+        width: 100vw;
+        height: 90vh;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    /** 2 Text Links */
+
+    .appleSilicon {
+        grid-area: 1 / 1 / 11 / 7;
+        background-color: #469C81;
+        color: #fff;
+        line-height: 1.1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .bundel {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .appleSilicon h1 {
+        margin: 0px;
+        width: 100%;
+        font-family: "Pinup";
+        font-size: calc(1em + 4vw);
+    }
+
+    .appleSilicon h2 {
+        margin: 0px;
+        width: 80%;
+        font-family: "Pinup";
+        font-size: calc(1em + 1vw);
+    }
+
+    .appleSilicon p {
+        margin: 0px;
+        width: 70%;
+        font-family: "Andes";
+        font-size: calc(1em + 0.5vw);
+    }
+
+    #intelVergleich {
+        height: 15%;
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 10%;
+        font-family: "Pinup";
+        font-size: 1.5vw;
+        background-color: #D72E35;
+        border: solid 0.2vw;
+        border-radius: 5px;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    #intelVergleich:hover {
+        background-color: #F8C513;
+        border: solid 0.2vw;
+        border-color: #D72E35;
+        color: #D72E35;
+    }
+
+    /** 2 Yellow space 2 */
+
+    .yellowSpace2 {
+        grid-area: 11 / 1 / 13 / 13;
+        background-color: #F8C513;
+    }
+
+    /** 2 Chips Rechts*/
+    .wolke2 {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        right: 2vw;
+        top: 5%;
+    }
+
+    .skala {
+        grid-area: 1 / 7 / 12 / 13;
+        background-color: #469C81;
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .intelDiv {
+        position: relative;
+        display: none;
+    }
+
+    .intel {
+        display: inline;
+        width: 2vw;
+    }
+
+    .pro {
+        width: 33%;
+        height: 100%;
+    }
+
+    .max {
+        width: 33%;
+        height: 100%;
+    }
+
+    .ultra {
+        width: 33%;
+        height: 100%;
+    }
+
+    .skala img {
+        width: auto;
+        max-width: 12vw;
+        max-height: 12vh;
+    }
+
+    .bounce-in-top {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .bounce-in-top img {
+        position: absolute;
+        bottom: 0vw;
+        transform: translate(-50%, 0);
+        -webkit-animation: slide-in-top 1s both;
+        animation: slide-in-top 1s both;
+        animation-play-state: paused;
+
+    }
+
+    .bounce-in-top img:nth-child(2) {
+        bottom: 1.5vh;
+        z-index: 2;
+    }
+
+    .bounce-in-top img:nth-child(3) {
+        bottom: 3vh;
+        z-index: 3;
+    }
+
+    .bounce-in-top img:nth-child(4) {
+        bottom: 4.5vh;
+        z-index: 4;
+    }
+
+    .bounce-in-top img:nth-child(5) {
+        bottom: 6vh;
+        z-index: 5;
+    }
+
+    .bounce-in-top img:nth-child(6) {
+        bottom: 7.5vh;
+        z-index: 6;
+    }
+
+    .bounce-in-top img:nth-child(7) {
+        bottom: 9vh;
+        z-index: 7;
+    }
+
+    .bounce-in-top img:nth-child(8) {
+        bottom: 10.5vh;
+        z-index: 8;
+    }
+
+    .bounce-in-top img:nth-child(9) {
+        bottom: 12vh;
+        z-index: 9;
+    }
+
+    .bounce-in-top img:nth-child(10) {
+        bottom: 13.5vh;
+        z-index: 10;
+    }
+
+    .bounce-in-top img:nth-child(11) {
+        bottom: 15vh;
+        z-index: 11;
+    }
+
+    .bounce-in-top img:nth-child(12) {
+        bottom: 16.5vh;
+        z-index: 12;
+    }
+
+    .bounce-in-top img:nth-child(13) {
+        bottom: 18vh;
+        z-index: 13;
+    }
+
+    .bounce-in-top img:nth-child(14) {
+        bottom: 19.5vh;
+        z-index: 14;
+    }
+
+    .bounce-in-top img:nth-child(15) {
+        bottom: 21vh;
+        z-index: 15;
+    }
+
+    .bounce-in-top img:nth-child(16) {
+        bottom: 22.5vh;
+        z-index: 16;
+    }
+
+    .bounce-in-top img:nth-child(17) {
+        bottom: 24vh;
+        z-index: 17;
+    }
+
+    .bounce-in-top img:nth-child(18) {
+        bottom: 25.5vh;
+        z-index: 18;
+    }
+
+    .bounce-in-top img:nth-child(19) {
+        bottom: 27vh;
+        z-index: 19;
+    }
+
+    .bounce-in-top img:nth-child(20) {
+        bottom: 28.5vh;
+        z-index: 20;
+    }
+
+    .bounce-in-top img:nth-child(21) {
+        bottom: 30vh;
+        z-index: 21;
+    }
+
+    .bounce-in-top img:nth-child(22) {
+        bottom: 31.5vh;
+        z-index: 22;
+    }
+
+    .bounce-in-top img:nth-child(23) {
+        bottom: 33vh;
+        z-index: 23;
+    }
+
+    .bounce-in-top img:nth-child(24) {
+        bottom: 34.5vh;
+        z-index: 24;
+    }
+
+    .bounce-in-top img:nth-child(25) {
+        bottom: 36vh;
+        z-index: 25;
+    }
+
+    .bounce-in-top img:nth-child(26) {
+        bottom: 37.5vh;
+        z-index: 26;
+    }
+
+    .bounce-in-top img:nth-child(27) {
+        bottom: 39vh;
+        z-index: 27;
+    }
+
+    .bounce-in-top img:nth-child(28) {
+        bottom: 40.5vh;
+        z-index: 28;
+    }
+
+    .bounce-in-top img:nth-child(29) {
+        bottom: 42vh;
+        z-index: 29;
+    }
+
+    @-webkit-keyframes slide-in-top {
+        0% {
+            -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .bounce-in-left {
+        position: absolute;
+        -webkit-animation: bounce-in-left 1.5s ease-in-out;
+        animation: bounce-in-left 1.5s ease-in-out;
+        animation-play-state: paused;
+        bottom: 0vw;
+    }
+
+    /* 3333333333333333333333 Seite 3*/
+    .parent3 {
+        display: grid;
+        width: 100vw;
+        height: 90vh;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .eingabe {
+        grid-area: 1 / 1 / 13 / 6;
+        background-color: #4F143B;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .eingabe input {
+        height: 7%;
+        width: 70%;
+        border-radius: 5px;
+    }
+
+    .eingabe h6 {
+        margin: 0px;
+        font-family: "Pinup";
+        font-size: 3vh;
+        color: #fff;
+    }
+
+    .eingabe button {
+        margin-top: 5%;
+        height: 10%;
+        width: 70%;
+        font-family: "Pinup";
+        font-size: 1.5vw;
+        align-content: center;
+        background-color: #D72E35;
+        border: solid 0.2vw;
+        border-radius: 5px;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .eingabe button:hover {
+        background-color: #F8C513;
+        border: solid 0.2vw;
+        border-color: #D72E35;
+        color: #D72E35;
+    }
+
+    .meme {
+        grid-area: 1 / 6 / 13 / 13;
+        background-color: #4F143B;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .meme img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+
+    /*Ende Media querrie Desktop*/
